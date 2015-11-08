@@ -1,4 +1,4 @@
 ```sh
 npm install mjpeg-stream-server -g
-mjpeg-stream-server --host localhost --port 8080
+wget --timeout 10 -q http://host/stream -O - | mjpeg-stream-server --host localhost --port 8080
 ```
