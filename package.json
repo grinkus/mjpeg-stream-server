@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Simple stream server piping mjpeg streams to clients.",
   "bin": {
-    "mjpeg-socket-server": "index.js"
+    "mjpeg-stream-server": "index.js"
   },
   "main": "index.js",
   "scripts": {
