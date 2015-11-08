@@ -1,6 +1,6 @@
 {
   "name": "mjpeg-stream-server",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple stream server piping mjpeg streams to clients.",
   "bin": {
     "mjpeg-socket-server": "index.js"
