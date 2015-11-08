@@ -15,17 +15,18 @@ var argv = require('minimist')(process.argv.slice(2), {
 
 process.stdin.resume();
 
-var boundary = '--boundarydonotcross'; // boundary string
+var boundary = 'Ba4oTvQMY8ew04N8dcnM'; // boundary string
 
 app.get('/', function (req, res) {
   res.setHeader(
     'Content-Type',
-    'multipart/x-mixed-replace;boundary="' + boundary + '"'
+    'multipart/x-mixed-replace;boundary=' + boundary
   );
   res.setHeader('Connection', 'close');
   res.setHeader('Pragma', 'no-cache');
-  res.setHeader('Cache-Control', 'no-cache, private');
-  res.setHeader('Expires', 0);
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, pre-check=0, post-check=0, max-age=0');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Expires', -1);
   res.setHeader('Max-Age', 0);
 
   process.stdin.pipe(res);
